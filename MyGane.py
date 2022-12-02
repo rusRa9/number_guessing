@@ -1,31 +1,13 @@
-import random
-import datetime
-
-computer_number = random.randint(1, 100)
-continue_game = True
-user_guesses = []
-start_time = datetime.datetime.now()
-
-while(continue_game):
-    user_guess = int(input('Uzmini skaitli starp 1 un 100: '))
-    user_guesses.append(user_guess)
-
-    if user_guess == computer_number:
-        print('Precīzi, tu uzminēji!')
-        continue_game = False
-    elif user_guess < computer_number:
-        print('Vairāk')
-    elif user_guess > computer_number:
-        print('Mazāk')
-    else:
-        print('Notika kļūda!')
-
-print('Game over!')
-
-#UZDEVUMS: aprēķināt vidējo starpību starp user_guesses un computer_number
-sum_of_differences = 0
-for n in user_guesses:
-    sum_of_differences += abs(n - computer_number)
-
-print(f'Vidējā starpība ir {sum_of_differences/len(user_guesses)}')
-print(f'Tu spēlēji {datetime.datetime.now()-start_time} sekundes')
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum rerum nam quas sapiente commodi, ad adipisci quos molestias neque blanditiis fuga itaque fugit iusto dolores nulla fugiat nobis repellendus iure facilis natus. Delectus, in quos facere, rem iure perspiciatis itaque corrupti ad dolorem, incidunt non animi aperiam voluptatibus laboriosam! Beatae, similique quidem assumenda temporibus optio hic, ex velit, laboriosam nulla consequatur ut quos. Maxime vitae sint est explicabo voluptatibus harum illo totam reiciendis accusantium perspiciatis nam asperiores laborum eveniet minus aliquam dolorem, neque laudantium adipisci nulla voluptas. Necessitatibus eveniet maiores quaerat sapiente, facilis aut dolore illo nulla id repellat amet!</h1>
+    </div>
+</body>
+</html>
